@@ -1,0 +1,145 @@
+.close_menu,
+header .links .logo,
+.icon_menu {
+    display: none;
+}
+
+
+.container{
+    width: 80%;
+    margin: auto;
+    max-width: 1500px;
+    z-index: 9999;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+header nav .logo img{
+    width: 200px;
+}
+
+
+header nav .links{
+    display: flex;
+    gap: 40px;
+}
+
+header nav .links a{
+    color:var(--white_color);
+    text-transform: capitalize;
+    font-size: 18px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+header nav .links a:hover{
+    color: var(--main_color);
+}
+
+header nav .icons{
+    display: flex;
+    gap: 30px;
+}
+header nav .icons a{
+    color: var(--main_color);
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+
+header nav .icons a:hover{
+    scale: 1.4;
+}
+
+
+.navbar {
+    transition: background-color 0.3s; 
+    z-index: 999;
+}
+
+.navbar.active {
+    background-color: black; 
+}
+
+.active-link {
+    border-radius: 5px;
+
+    padding: 2px 7px;
+    background-color: #c8f31dbb;
+    transition: 0.5s;
+}
+
+@media (max-width:1250px){
+    .container{
+        width: 90%;
+    }
+}
+
+
+@media (max-width:1000px){
+    header nav .links{
+        position: fixed;
+        top: 0;
+        flex-direction: column;
+        width: 400px;
+        background: black;
+        left: -400px;
+        padding: 50px 0;
+        height: 100%;
+        border-right: 1px solid var(--border_color);
+        text-align: center;
+        transition: 0.3s ease-in-out;
+    }
+    header nav .links.active{
+        left: 0;
+    }
+    .close_menu{
+        display: block;
+        font-size: 28px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    header .links .logo{
+        display: block;
+    }
+    .icon_menu{
+        display: block;
+        font-size: 28px;
+    }
+}
+
+
+
+@media (max-width:500px){
+    header nav .icons a{
+        font-size: 20px;
+    }
+    header nav .icons{
+        gap: 15px;
+        align-items: center;
+    }
+    header nav .logo img{
+        width: 150px;
+    }
+    header nav .links{
+        width: 100%;
+        left: -100%;
+    }
+    .icon_menu{
+        margin-left: 15px;
+    }
+}

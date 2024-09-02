@@ -1,0 +1,124 @@
+.about{
+    padding-top: 160px;
+    height: 100vh;
+    margin-bottom: 50px;
+}
+
+.about .container{
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    padding: 45px;
+    height: 80vh;
+    margin-bottom: 50px;
+}
+
+.div_text .btn{
+    background-color: var(--main_color);
+    padding: 14px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: var(--black_color);
+    transition: 0.3s;
+}
+
+.div_text .btn:hover{
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+
+.about .div_text{
+    width: 63%;
+}
+
+.about .div_text h5{
+    color: var(--p_color);
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.about .div_text h2{
+    font-size: 45px;
+    margin: 25px 0 5px;
+}
+
+.about .div_text h4{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about .div_text p{
+    line-height: 1.8;
+}
+
+.about .div_text ul{
+    display: flex;
+    color: var(--white_color);
+    margin: 30px 0 20px;
+    flex-wrap: wrap;
+}
+
+.about .div_text ul li{
+    width: 50%;
+    font-weight: bold;
+}
+
+.about .div_text ul li i{
+    color: var(--main_color);
+}
+
+
+.about .container .div_img img{
+    border-radius: 5px;
+}
+
+
+
+@media (max-width:1000px){
+
+    .about .container{
+        flex-direction: column;
+        height: 120vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .about .div_text{
+        width: 100%;
+        margin-bottom: 5%;
+        align-items: center;
+    }
+    .about .div_text ul .front{
+
+        display: flex;
+        justify-content: center;
+        width: 45%;
+    }
+    .about .div_text ul .back{
+        display: flex;
+        justify-content: center;
+        width: 45%;
+    }
+    
+    .about .div_text ul .back i{
+        position: relative;
+        right: 28px;
+    }
+    .about .div_text ul .front i{
+        position: relative;
+        right: 20px;
+    }
+    .about .div_text ul li{
+        position: relative;
+        left: 20px;
+        display: grid;
+        width: 85%;
+        justify-content: space-between;
+    }
+    .about .div_img{
+        width: 35%;
+    }
+}

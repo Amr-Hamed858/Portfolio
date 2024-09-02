@@ -1,0 +1,23 @@
+<header class="navbar">
+    <nav class="container">
+        <a href="/home" class="logo" ><img src="./assets/img/logo.png" alt=""></a>
+
+        <div class="links" id="links">
+            <span class="close_menu"><i class="fa-solid fa-xmark" (click)="OpenCloseMenu()"></i></span>
+            <a href="" class="logo"> <img src="./assets/img/logo.png" alt=""></a>
+            <a routerLink="home" class="nav-link" routerLinkActive="active-link" aria-current="page" >Home</a>
+            <a routerLink="about" class="nav-link" routerLinkActive="active-link">About</a>
+            <a routerLink="services" class="nav-link" aria-current="page" routerLinkActive="active-link">Services</a>
+            <a routerLink="projects" class="nav-link" aria-current="page" routerLinkActive="active-link">Projects</a>
+            <a routerLink="contact" class="nav-link" aria-current="page" routerLinkActive="active-link">Contact</a>
+        </div>
+
+        <div class="icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <span class="icon_menu" (click)="OpenCloseMenu()"><i class="fa-solid fa-bars"></i></span>
+        </div>
+        
+    </nav>
+</header>
